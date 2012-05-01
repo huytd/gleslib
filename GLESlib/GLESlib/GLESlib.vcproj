@@ -166,14 +166,18 @@
 	<References>
 	</References>
 	<Files>
-		<File
-			RelativePath=".\Game.h"
+		<Filter
+			Name="Game"
 			>
-		</File>
-		<File
-			RelativePath=".\GObject.h"
-			>
-		</File>
+			<File
+				RelativePath="..\Game.h"
+				>
+			</File>
+			<File
+				RelativePath="..\GObject.h"
+				>
+			</File>
+		</Filter>
 		<File
 			RelativePath=".\main.cpp"
 			>

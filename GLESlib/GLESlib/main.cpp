@@ -7,7 +7,7 @@
 
 #include <time.h>
 #include <math.h>
-#include "Game.h"
+#include "../Game.h"
 
 #define	WINDOW_CLASS _T("PVRShellClass")
 #define WINDOW_WIDTH	326

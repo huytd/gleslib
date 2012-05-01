@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEB81F661550481F006CC946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB81F651550481F006CC946 /* UIKit.framework */; };
+		CEB81F681550481F006CC946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB81F671550481F006CC946 /* Foundation.framework */; };
+		CEB81F6A1550481F006CC946 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB81F691550481F006CC946 /* CoreGraphics.framework */; };
+		CEB81F6C1550481F006CC946 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB81F6B1550481F006CC946 /* GLKit.framework */; };
+		CEB81F6E1550481F006CC946 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB81F6D1550481F006CC946 /* OpenGLES.framework */; };
+		CEB81F741550481F006CC946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEB81F721550481F006CC946 /* InfoPlist.strings */; };
+		CEB81F761550481F006CC946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB81F751550481F006CC946 /* main.m */; };
+		CEB81F7A1550481F006CC946 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEB81F791550481F006CC946 /* AppDelegate.mm */; };
+		CEB81F811550481F006CC946 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEB81F801550481F006CC946 /* ViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEA72AB015505BA20016045B /* GObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GObject.h; sourceTree = "<group>"; };
+		CEA72AB215505BD40016045B /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		CEB81F611550481F006CC946 /* GLESlib_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLESlib_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB81F651550481F006CC946 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEB81F671550481F006CC946 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEB81F691550481F006CC946 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEB81F6B1550481F006CC946 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		CEB81F6D1550481F006CC946 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CEB81F711550481F006CC946 /* GLESlib_iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLESlib_iOS-Info.plist"; sourceTree = "<group>"; };
+		CEB81F731550481F006CC946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEB81F751550481F006CC946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEB81F771550481F006CC946 /* GLESlib_iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLESlib_iOS-Prefix.pch"; sourceTree = "<group>"; };
+		CEB81F781550481F006CC946 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEB81F791550481F006CC946 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		CEB81F7F1550481F006CC946 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEB81F801550481F006CC946 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB81F5E1550481F006CC946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB81F661550481F006CC946 /* UIKit.framework in Frameworks */,
+				CEB81F681550481F006CC946 /* Foundation.framework in Frameworks */,
+				CEB81F6A1550481F006CC946 /* CoreGraphics.framework in Frameworks */,
+				CEB81F6C1550481F006CC946 /* GLKit.framework in Frameworks */,
+				CEB81F6E1550481F006CC946 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEA72AB315505BF60016045B /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				CEA72AB215505BD40016045B /* Game.h */,
+				CEA72AB015505BA20016045B /* GObject.h */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		CEB81F561550481F006CC946 = {
+			isa = PBXGroup;
+			children = (
+				CEA72AB315505BF60016045B /* Game */,
+				CEB81F6F1550481F006CC946 /* GLESlib_iOS */,
+				CEB81F641550481F006CC946 /* Frameworks */,
+				CEB81F621550481F006CC946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB81F621550481F006CC946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB81F611550481F006CC946 /* GLESlib_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB81F641550481F006CC946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEB81F651550481F006CC946 /* UIKit.framework */,
+				CEB81F671550481F006CC946 /* Foundation.framework */,
+				CEB81F691550481F006CC946 /* CoreGraphics.framework */,
+				CEB81F6B1550481F006CC946 /* GLKit.framework */,
+				CEB81F6D1550481F006CC946 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEB81F6F1550481F006CC946 /* GLESlib_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEB81F781550481F006CC946 /* AppDelegate.h */,
+				CEB81F791550481F006CC946 /* AppDelegate.mm */,
+				CEB81F7F1550481F006CC946 /* ViewController.h */,
+				CEB81F801550481F006CC946 /* ViewController.mm */,
+				CEB81F701550481F006CC946 /* Supporting Files */,
+			);
+			path = GLESlib_iOS;
+			sourceTree = "<group>";
+		};
+		CEB81F701550481F006CC946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEB81F711550481F006CC946 /* GLESlib_iOS-Info.plist */,
+				CEB81F721550481F006CC946 /* InfoPlist.strings */,
+				CEB81F751550481F006CC946 /* main.m */,
+				CEB81F771550481F006CC946 /* GLESlib_iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB81F601550481F006CC946 /* GLESlib_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB81F8A1550481F006CC946 /* Build configuration list for PBXNativeTarget "GLESlib_iOS" */;
+			buildPhases = (
+				CEB81F5D1550481F006CC946 /* Sources */,
+				CEB81F5E1550481F006CC946 /* Frameworks */,
+				CEB81F5F1550481F006CC946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLESlib_iOS;
+			productName = GLESlib_iOS;
+			productReference = CEB81F611550481F006CC946 /* GLESlib_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB81F581550481F006CC946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = CEB81F5B1550481F006CC946 /* Build configuration list for PBXProject "GLESlib_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEB81F561550481F006CC946;
+			productRefGroup = CEB81F621550481F006CC946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB81F601550481F006CC946 /* GLESlib_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB81F5F1550481F006CC946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB81F741550481F006CC946 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB81F5D1550481F006CC946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB81F761550481F006CC946 /* main.m in Sources */,
+				CEB81F7A1550481F006CC946 /* AppDelegate.mm in Sources */,
+				CEB81F811550481F006CC946 /* ViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEB81F721550481F006CC946 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB81F731550481F006CC946 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB81F881550481F006CC946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB81F891550481F006CC946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB81F8B1550481F006CC946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLESlib_iOS/GLESlib_iOS-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "GLESlib_iOS/GLESlib_iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEB81F8C1550481F006CC946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLESlib_iOS/GLESlib_iOS-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "GLESlib_iOS/GLESlib_iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB81F5B1550481F006CC946 /* Build configuration list for PBXProject "GLESlib_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB81F881550481F006CC946 /* Debug */,
+				CEB81F891550481F006CC946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB81F8A1550481F006CC946 /* Build configuration list for PBXNativeTarget "GLESlib_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB81F8B1550481F006CC946 /* Debug */,
+				CEB81F8C1550481F006CC946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB81F581550481F006CC946 /* Project object */;
+}
