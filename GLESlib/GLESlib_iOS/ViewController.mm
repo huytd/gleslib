@@ -88,7 +88,7 @@
     glViewport(0, 0, GAME_WIDTH, GAME_HEIGHT);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glOrthof(-1.0, 1.0, -1.5, 1.5, -1.0, 1.0);
+    glOrthof(0, GAME_WIDTH, GAME_HEIGHT, 0, -1.0, 1.0);
     glMatrixMode(GL_MODELVIEW);
     
     gameMain->init();
