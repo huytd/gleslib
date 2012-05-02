@@ -20,11 +20,17 @@ void Game::loop() {
 }
 
 void Game::render() {
-	GLfloat vertices[] = {
+	/*GLfloat vertices[] = {
 		-1.0f, -1.0f,  0.0f,  // 0. left-bottom
 		 1.0f, -1.0f,  0.0f,  // 1. right-bottom
 		-1.0f,  1.0f,  0.0f,  // 2. left-top
 		 1.0f,  1.0f,  0.0f   // 3. right-top
+	};*/
+	GLfloat vertices[] = {
+		 0.0f, 480.0f,  0.0f,  // 0. left-bottom
+		 320.0f, 480.0f,  0.0f,  // 1. right-bottom
+		 0.0f,  0.0f,  0.0f,  // 2. left-top
+		 320.0f,  0.0f,  0.0f   // 3. right-top
 	};
 	glVertexPointer(3, GL_FLOAT, 0, vertices);
 	glEnableClientState(GL_VERTEX_ARRAY);

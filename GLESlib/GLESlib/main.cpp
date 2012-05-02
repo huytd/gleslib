@@ -211,7 +211,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, TCHAR *lpCmdLin
 	glViewport(0, 0, GAME_WIDTH, GAME_HEIGHT);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glOrthof(-1.0f, 1.0f, -1.5f, 1.5f, -1.0f, 1.0f);
+    // Convert from right-handed to left-handed coordinate system
+	glOrthof(0, GAME_WIDTH, GAME_HEIGHT, 0, -1, 1);
     glMatrixMode(GL_MODELVIEW);
 	
 	glClearColor(0.6f, 0.8f, 1.0f, 1.0f); // clear blue
@@ -227,18 +228,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, TCHAR *lpCmdLin
 		{
 			goto cleanup;
 		}
-
-		/*GLfloat vertices[720];
-		for (int i = 0; i < 720; i += 2) {
-			// x value
-			vertices[i]   = (cos(DEGREES_TO_RADIANS(i)) * 1);
-			// y value
-			vertices[i+1] = (sin(DEGREES_TO_RADIANS(i)) * 1);
-		}
-		glVertexPointer(2, GL_FLOAT, 0, vertices);
-		glEnableClientState(GL_VERTEX_ARRAY);
-		glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
-		glDrawArrays(GL_TRIANGLE_FAN, 0, 360);*/
 		
 		gameMain->render();
 		gameMain->loop();
