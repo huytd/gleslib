@@ -10,8 +10,8 @@
 #include "../Game.h"
 
 #define	WINDOW_CLASS _T("PVRShellClass")
-#define WINDOW_WIDTH	326
-#define WINDOW_HEIGHT	486
+/*#define WINDOW_WIDTH	324 // Size on windows 7
+#define WINDOW_HEIGHT	506 // Size on windows 7 */
 #define GAME_WIDTH 320
 #define GAME_HEIGHT 480
 
@@ -23,6 +23,18 @@ time_t sTime, eTime;
 GObject* gameMain = 0;
 int mx, my;
 bool LMBDOWN, RMBDOWN;
+
+void ClientResize(HWND hWnd, int nWidth, int nHeight)
+{
+  RECT rcClient, rcWindow;
+  POINT ptDiff;
+  GetClientRect(hWnd, &rcClient);
+  GetWindowRect(hWnd, &rcWindow);
+  ptDiff.x = (rcWindow.right - rcWindow.left) - rcClient.right;
+  ptDiff.y = (rcWindow.bottom - rcWindow.top) - rcClient.bottom;
+  MoveWindow(hWnd,rcWindow.left, rcWindow.top, nWidth + ptDiff.x, nHeight + ptDiff.y, TRUE);
+}
+
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -133,8 +145,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, TCHAR *lpCmdLin
     sWC.lpszMenuName = 0;
 	sWC.hbrBackground = (HBRUSH) GetStockObject(WHITE_BRUSH);
     sWC.lpszClassName = WINDOW_CLASS;
-	unsigned int nWidth = WINDOW_WIDTH;
-	unsigned int nHeight = WINDOW_HEIGHT;
+
+	unsigned int nWidth = GAME_WIDTH;
+	unsigned int nHeight = GAME_HEIGHT;
 
 	ATOM registerClass = RegisterClass(&sWC);
 	if (!registerClass)
@@ -148,6 +161,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, TCHAR *lpCmdLin
 	hWnd = CreateWindow( WINDOW_CLASS, _T("GLESLib - Device Emulator"), WS_VISIBLE | WS_SYSMENU,
 						 0, 0, nWidth, nHeight, NULL, NULL, hInstance, NULL);
 	eglWindow = hWnd;
+
+	ClientResize(hWnd, GAME_WIDTH, GAME_HEIGHT);
 
 	// Get the associated device context
 	hDC = GetDC(hWnd);
